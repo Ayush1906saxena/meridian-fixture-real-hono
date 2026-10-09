@@ -1,0 +1,4 @@
+{
+  "pack": "node",
+  "test": "mkdir -p .meridian-reports && npx --yes pnpm@12.6.0 install --frozen-lockfile && npx --yes pnpm@12.6.0 exec vitest run --reporter=default --reporter=junit --outputFile.junit=.meridian-reports/junit.xml src/router"
+}
